@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import mainLogo from "../static/Logo.png"
+import mainLogo from "../statics/Logo.png"
 
 const WelcomeText = ({ description }) => (
   <div className="welcome-text">

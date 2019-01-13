@@ -1,11 +1,9 @@
 import React from 'react';
-import {Button} from 'antd';
 import {Link} from 'react-router-dom';
 import CoverVideo from './CoverVideo';
 import WelcomeText from './WelcomeText';
 import '../styles/home.css';
 import Header from './Header/component'
-import JobCategories from './JobCategories';
 import '../styles/less/homepage.less';
 
 class Home extends React.Component {
@@ -17,16 +15,14 @@ class Home extends React.Component {
     return (
       <React.Fragment>
         <div className="mainBanner">
-          <Header />
-          <CoverVideo/>
           <div className="textContainer" id="jobCategories">
             <WelcomeText description=""/>
             <div className="apply-job-btn">
-              <Button size="large" type="primary" htmlType="button">
+              <button size="large" type="primary" htmlType="button">
                 <Link to='/job-categories'>
                   Job Openings
                 </Link>
-              </Button>
+              </button>
             </div>
           </div>
         </div>
